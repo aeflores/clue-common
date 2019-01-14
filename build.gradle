@@ -33,17 +33,6 @@ publishing {
             from components.java
         }
     }
-
-    repositories {
-        maven {
-            credentials {
-                username artifactory_user
-                password artifactory_password
-            }
-            //Always publish to the public releases repo
-            url "${artifactory_contextUrl}/libs-public-release-local"
-        }
-    }
 }
 
 release {
